@@ -10,6 +10,14 @@ html, body {
 }
 
 body {
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
 	webkit-hyphens: auto;
   -ms-hyphens: auto;
 	hyphens: auto;
@@ -65,7 +73,7 @@ img {
 	color: #E94F36;
 }
 
-.menu a:hover {
+a:hover {
 	color: #E94F36;
 }
 
@@ -78,17 +86,41 @@ p {
 	margin-top: 0;
 }
 
+footer {
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-between;
+
+	padding: 10px;
+}
+
+footer > span,
+footer > a {
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+}
+
+footer a {
+	order: 1;
+}
+
+footer span {
+	order: 2;
+	padding-bottom: 0;
+}
+
 
 @media only screen and (min-width: 800px) {
 	.layout {
-		display: -webkit-box;
-	  display: -ms-flexbox;
-	  display: flex;
-	  -ms-flex-wrap: wrap;
-	  flex-wrap: wrap;
-	  -webkit-flex-wrap: wrap;
-	  -ms-flex-pack: distribute;
-	  justify-content: space-between;
+	  -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
 	}
 
 	.menu {
@@ -102,8 +134,25 @@ p {
 
 	.content {
 		padding-left: 50%;
-		/* width: 50%; */
 		padding-top: 120px;
+	}
+
+	footer > span,
+	footer > a {
+		text-align: center;
+		width: auto;
+	}
+
+	footer {
+		flex-shrink: 0;
+	}
+
+	footer a {
+		order: 2;
+	}
+
+	footer span {
+		order: 1;
 	}
 
 	.logo {
