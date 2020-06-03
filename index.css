@@ -33,16 +33,18 @@ img {
 }
 
 .layout {
-	padding: 15px;
+	padding: 10px;
+	width: 100%;
 }
 
 .content {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 .logo {
-	margin-bottom: 60px;
-	margin-top: 60px;
+	margin: auto;
+	margin-bottom: 80px;
+	margin-top: 80px;
 }
 
 .menu {
@@ -63,8 +65,21 @@ img {
 	color: #E94F36;
 }
 
+.menu a:hover {
+	color: #E94F36;
+}
 
-@media only screen and (min-width: 600px) {
+.menu a,
+.menu span {
+	padding: 10px 0;
+}
+
+p {
+	margin-top: 0;
+}
+
+
+@media only screen and (min-width: 800px) {
 	.layout {
 		display: -webkit-box;
 	  display: -ms-flexbox;
@@ -78,15 +93,37 @@ img {
 
 	.menu {
 		position: fixed;
+
+		background: white;
+		top: 0; left: 50%; right: 0;
+		width: 50%;
+		padding-right: 10px;
 	}
 
 	.content {
-		width: 50%;
-		padding-right: 5%;
+		padding-left: 50%;
+		/* width: 50%; */
+		padding-top: 120px;
 	}
 
 	.logo {
-		width: 50%;
+		position: fixed;
+		top: 120px;
+		margin: 0;
+		left: 0; width: 50%;
+		padding: 0 30px;
+	}
+
+	.logo img {
+		margin: auto;
+		max-width: 600px;
+	}
+
+	p {
 		padding-right: 5%;
+	}
+
+	.layout {
+		padding: 0;
 	}
 }
