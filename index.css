@@ -38,6 +38,15 @@ p {
   hyphens: auto;
 }
 
+p a {
+	text-decoration: underline;
+}
+
+.event-link {
+	margin-top: 2rem;
+	text-align: center;
+}
+
 img {
 	display: block;
 	width: 100%;
@@ -128,9 +137,9 @@ footer span {
 }
 
 .event {
-	padding: 10px;
+	padding: 1rem;
 	border: 1px solid #111;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .event-title {
@@ -139,7 +148,7 @@ footer span {
 
 .event-date {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 2rem;
 }
 
 .event p:last-child {
@@ -212,5 +221,9 @@ footer span {
 	.events {
 		margin-bottom: 120px;
 		padding-right: 10px;
+	}
+
+	.event {
+		margin-bottom: 1.5rem;
 	}
 }
