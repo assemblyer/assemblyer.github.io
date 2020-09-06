@@ -52,6 +52,8 @@
     position: fixed;
 
     justify-content: flex-start;
+
+    padding: 20px;
   }
 
   .menu-desktop > a,
