@@ -1,0 +1,89 @@
+.logo-small {
+  display: none;
+
+	width: 20px;
+  position: absolute;
+  left: 10px;
+}
+
+.menu {
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+	top: 0; left: 0; right: 0;
+	z-index: 9999;
+
+	background: white;
+  width: 100%;
+	margin-bottom: 40px;
+  padding: 15px 10px;
+}
+
+.menu.fixed {
+	position: fixed;
+}
+
+.menu.fixed .mobile-button {
+  margin-left: 30px;
+}
+
+.menu.fixed .logo-small {
+  display: block;
+}
+
+.menu span {
+	color: #E94F36;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .menu {
+    position: fixed;
+
+    justify-content: flex-start;
+  }
+
+  .menu-desktop > a,
+  .menu-desktop > span {
+    margin-right: 10px;
+  }
+
+  .logo-small {
+    top: 5px;
+  }
+
+  .menu-homepage .logo-small {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+
+    position: absolute;
+    left: 50%; top: 10px;
+
+    padding-bottom: 10px;
+  }
+
+  .mobile-button {
+    display: none!important;
+  }
+
+  .lang {
+    position: absolute;
+    right: 10px; top: 10px;
+
+    padding-bottom: 10px;
+  }
+}
