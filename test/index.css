@@ -218,6 +218,10 @@ figcaption {
 		padding-top: 120px;
 	}
 
+	footer {
+		padding-top: 120px;
+	}
+
 	footer > span,
 	footer > a {
 		text-align: center;
