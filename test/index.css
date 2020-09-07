@@ -174,6 +174,10 @@ figcaption {
 	font-size: 1rem;
 }
 
+.schedule-event {
+	margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 800px) {
 	.lead {
 		margin-bottom: 120px;
@@ -214,10 +218,6 @@ figcaption {
 		padding-top: 120px;
 	}
 
-	.content.content-homepage {
-		padding-top: 0;
-	}
-
 	footer > span,
 	footer > a {
 		text-align: center;
@@ -238,8 +238,7 @@ figcaption {
 
 	.logo-big {
 		position: absolute;
-		top: 50%; left: 0;
-		transform: translateY(-50%);
+		left: 0;
 		margin: 0;
 		width: 50%;
 		padding: 0 30px;
@@ -262,6 +261,7 @@ figcaption {
 
 	.block {
 		margin-bottom: 120px;
+		padding-right: 5%;
 	}
 
 	.grid img:nth-child(2) {
