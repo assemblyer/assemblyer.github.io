@@ -121,11 +121,11 @@ footer span {
 
 .event-title {
 	text-align: center;
+	margin-bottom: 2rem;
 }
 
 .event-date {
 	text-align: center;
-	margin-bottom: 2rem;
 }
 
 .block {
@@ -145,8 +145,16 @@ footer span {
 
 h2 {
 	font-weight: normal;
+	font-size: 1rem;
+	text-align: center;
+	color: #E94F36;
+}
+
+h1 {
+	font-weight: normal;
 	font-size: 1.3rem;
 	text-align: center;
+	color: #E94F36;
 }
 
 .grid {
@@ -204,7 +212,8 @@ figcaption {
     padding: 0;
 	}
 
-	h2 {
+	h2,
+	h1 {
 		position: absolute;
 		left: 0;
 		width: 50%;
@@ -219,7 +228,13 @@ figcaption {
 	}
 
 	footer {
-		padding-top: 120px;
+		/* padding-top: 120px; */
+		position: fixed;
+		bottom: 0; left: 0;
+
+		background: white;
+		width: 100%;
+		padding: 6px 10px;
 	}
 
 	footer > span,
@@ -285,4 +300,35 @@ figcaption {
 	.content-event {
 		margin-bottom: 120px;
 	}
+}
+
+.subscribe {
+	/* position: relative; */
+	display: flex;
+	width: 100%;
+}
+
+.subscribe input {
+	border-radius: 0;
+	border: 1px solid #111;
+	border-right: 0;
+	font-size: 1.3rem;
+	font-family: serif;
+	margin: 0;
+	width: 100%;
+	outline: none;
+  background: white;
+  resize: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  padding: 5px;
+}
+
+.subscribe button {
+	background: white;
+	border-radius: 0;
+	border: 1px solid #111;
+	font-size: 1.3rem;
+	font-family: serif;
+	padding: 5px;
 }
